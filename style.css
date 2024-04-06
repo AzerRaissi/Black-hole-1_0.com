@@ -1,0 +1,194 @@
+/* General Styling */
+:root {
+  --smaller: .75;
+  --primary-color: #ffffff; /* Primary color: white */
+  --secondary-color: #00d8ff; /* Secondary color: cyan */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url("s.jpeg") no-repeat center center fixed; /* Updated background image with a space theme */
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}                   
+
+.container {
+  color: var(--primary-color); /* Updated text color to primary color */
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  color: var(--primary-color); /* Updated heading color to primary color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better visibility */
+  animation: fadeIn 2s ease; /* Added fadeIn animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+  border: 2px solid var(--primary-color); /* Added border for list items */
+  border-radius: 20px; /* Added border-radius for rounded corners */
+  margin: 0.5em; /* Added margin between list items */
+  animation: slideIn 1s ease; /* Added slideIn animation */
+  transition: transform 0.3s ease; /* Added smooth transition */
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Added hover effect */
+  transform: scale(1.1); /* Added scale effect on hover */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Added box shadow on hover */
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+  color: var(--primary-color); /* Updated span color to primary color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow for better visibility */
+  animation: pulse 2s infinite alternate; /* Added pulse animation */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+#navigation-bar img{
+    height: 200px;
+    position: absolute;
+    ;
+    top: 65%;
+    left: 26%;
+    opacity: .9;
+    transition: all .4s ease;
+}
+#navigation-bar img:hover{
+    opacity: 1;
+    transform:rotate(-45deg);
+}
+#navigation img{
+    height: 170px;
+    position: absolute;
+    ;
+    top: 68%;
+    left: 58.5%;
+    opacity: .9;
+    transition: all .4s ease;
+}
+#navigation img:hover{
+    opacity: 1;
+    transform:rotate(45deg);}
+
+
+.social-media-links{
+    height: 8vh;
+    position: absolute;
+    z-index: 2;
+    padding: 380px;
+    width: auto;
+    display: flex;
+    left: 3.8%
+}
+.social-media{
+    color: black;
+    width:  30px;
+    opacity: .9;
+    margin: 30px;
+    transition: all .4s ease;
+}
+.social-media:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.social-med{
+    height: 8vh;
+    position: absolute;
+    z-index: 2;
+    padding: 380px;
+    width: auto;
+    display: flex;
+    left: 33%
+}
+.social-medi{
+    color: white;
+    width:  30px;
+    ;
+    opacity: .9;
+    margin: 30px;
+    transition: all .4s ease;
+}
+.social-medi:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
